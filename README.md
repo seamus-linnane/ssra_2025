@@ -1,2 +1,20 @@
 # ssra_2025
-Files and sub-projects to support the Beacon Hospital 2025 SSRA program in medical ML
+Files and sub-projects to support the Beacon Hospital 2025 SSRA program in medical ML.
+
+This repository collects small utilities and experiments that accompany the 2025
+Beacon Hospital Summer School for Research in AI.  The `ecg_extraction`
+subdirectory contains a full workflow for digitising ECG rhythm strips,
+including a Jupyter notebook.
+
+## Running the notebook
+
+1. Install the dependencies listed in
+   `ecg_extraction/requirements.txt`.
+2. Launch Jupyter and open the notebook:
+
+   ```bash
+   jupyter notebook ecg_extraction/rhythm_strip_notebook.ipynb
+   ```
+
+Follow the steps in the notebook to extract and calibrate traces from your own
+ECG PDFs.
