@@ -1,0 +1,7 @@
+# Ignore any CSVs or images with patient data
+*.csv
+*.png
+*.pdf
+
+# macOS system files
+.DS_Store
