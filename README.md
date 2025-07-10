@@ -4,7 +4,9 @@ Files and sub-projects to support the Beacon Hospital 2025 SSRA program in medic
 This repository collects small utilities and experiments that accompany the 2025
 Beacon Hospital Summer School for Research in AI.  The `ecg_extraction`
 subdirectory contains a full workflow for digitising ECG rhythm strips,
-including a Jupyter notebook.
+including a Jupyter notebook. The `pft_xml_extraction` directory provides a
+command line tool for turning pulmonary function test (PFT) XML files into
+tidy JSON and CSV tables.
 
 ## Running the notebook
 
@@ -18,3 +20,26 @@ including a Jupyter notebook.
 
 Follow the steps in the notebook to extract and calibrate traces from your own
 ECG PDFs.
+
+## PFT XML extraction
+
+# codex/replace-absolute-paths-with-relative-paths
+The `pft_xml_extraction` folder contains a notebook for parsing pulmonary function test XML files.
+Place your XML inputs in an `input/` directory and run:
+
+```bash
+jupyter notebook pft_xml_extraction/pft_xml.ipynb
+```
+
+The notebook will save CSV and JSON outputs alongside the input files unless you provide alternative paths.
+
+The `pft_xml_extraction` folder contains `pft_extraction.py` which converts PFT
+XML files into JSON and CSV tables.
+
+```bash
+python pft_xml_extraction/pft_extraction.py
+```
+
+Place your XML files in `pft_xml_extraction/input` and the outputs will be
+written next to them under `pft_xml_extraction/output`.
+main
