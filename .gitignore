@@ -1,0 +1,15 @@
+# Ignore any CSVs or images with patient data
+*.csv
+*.png
+*.pdf
+
+# macOS system files
+.DS_Store
+
+# codex/update-.gitignore-for-python-artifacts
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
