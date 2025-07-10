@@ -5,3 +5,9 @@
 
 # macOS system files
 .DS_Store
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
