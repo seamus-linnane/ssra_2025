@@ -18,3 +18,14 @@ including a Jupyter notebook.
 
 Follow the steps in the notebook to extract and calibrate traces from your own
 ECG PDFs.
+
+## PFT XML extraction
+
+The `pft_xml_extraction` folder contains a notebook for parsing pulmonary function test XML files.
+Place your XML inputs in an `input/` directory and run:
+
+```bash
+jupyter notebook pft_xml_extraction/pft_xml.ipynb
+```
+
+The notebook will save CSV and JSON outputs alongside the input files unless you provide alternative paths.
