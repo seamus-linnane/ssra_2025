@@ -23,7 +23,6 @@ ECG PDFs.
 
 ## PFT XML extraction
 
-# codex/replace-absolute-paths-with-relative-paths
 The `pft_xml_extraction` folder contains a notebook for parsing pulmonary function test XML files.
 Place your XML inputs in an `input/` directory and run:
 
