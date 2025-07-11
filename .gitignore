@@ -2,6 +2,7 @@
 *.csv
 *.png
 *.pdf
+*.xml
 
 # macOS system files
 .DS_Store
