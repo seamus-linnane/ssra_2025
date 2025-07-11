@@ -41,3 +41,13 @@ python pft_extractor.py input/*.xml --output output
 
 Place your XML files in `input` and the outputs will be
 written next to them under `output`.
+
+## Development and Testing
+
+Install the development dependencies before running `pytest`:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+This file includes common packages used in the utilities, such as `pandas` and `lxml`.
