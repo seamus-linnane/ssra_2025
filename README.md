@@ -32,13 +32,12 @@ jupyter notebook pft_xml_extraction/pft_xml.ipynb
 
 The notebook will save CSV and JSON outputs alongside the input files unless you provide alternative paths.
 
-The `pft_xml_extraction` folder contains `pft_extraction.py` which converts PFT
-XML files into JSON and CSV tables.
+The `pft_xml_extraction` folder contains `pft_extractor.py` which converts PFT
+XML files into JSON and CSV tables. From inside that directory run:
 
 ```bash
-python pft_xml_extraction/pft_extraction.py
+python pft_extractor.py input/*.xml --output output
 ```
 
-Place your XML files in `pft_xml_extraction/input` and the outputs will be
-written next to them under `pft_xml_extraction/output`.
-main
+Place your XML files in `input` and the outputs will be
+written next to them under `output`.
