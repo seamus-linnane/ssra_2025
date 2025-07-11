@@ -1,53 +1,6 @@
-# ssra_2025
-Files and sub-projects to support the Beacon Hospital 2025 SSRA program in medical ML.
+# SSRA 2025 Utilities
 
-This repository collects small utilities and experiments that accompany the 2025
-Beacon Hospital Summer School for Research in AI.  The `ecg_extraction`
-subdirectory contains a full workflow for digitising ECG rhythm strips,
-including a Jupyter notebook. The `pft_xml_extraction` directory provides a
-command line tool for turning pulmonary function test (PFT) XML files into
-tidy JSON and CSV tables.
+This repository contains small, standalone projects developed for the Beacon Hospital Summer School for Research in AI 2025.
+Each folder inside `projects/` is a self-contained utility with its own README and requirements.
 
-## Running the notebook
-
-1. Install the dependencies listed in
-   `ecg_extraction/requirements.txt`.
-2. Launch Jupyter and open the notebook:
-
-   ```bash
-   jupyter notebook ecg_extraction/rhythm_strip_notebook.ipynb
-   ```
-
-Follow the steps in the notebook to extract and calibrate traces from your own
-ECG PDFs.
-
-## PFT XML extraction
-
-The `pft_xml_extraction` folder contains a notebook for parsing pulmonary function test XML files.
-Place your XML inputs in an `input/` directory and run:
-
-```bash
-jupyter notebook pft_xml_extraction/pft_xml.ipynb
-```
-
-The notebook will save CSV and JSON outputs alongside the input files unless you provide alternative paths.
-
-The `pft_xml_extraction` folder contains `pft_extractor.py` which converts PFT
-XML files into JSON and CSV tables. From inside that directory run:
-
-```bash
-python pft_extractor.py input/*.xml --output output
-```
-
-Place your XML files in `input` and the outputs will be
-written next to them under `output`.
-
-## Development and Testing
-
-Install the development dependencies before running `pytest`:
-
-```bash
-pip install -r requirements-dev.txt
-```
-
-This file includes common packages used in the utilities, such as `pandas` and `lxml`.
+Development dependencies common across projects are listed in `requirements-dev.txt`.
