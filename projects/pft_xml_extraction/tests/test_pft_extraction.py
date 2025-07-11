@@ -86,7 +86,7 @@ def test_process_xml_files(tmp_path: Path):
     sys.modules["lxml"] = lxml_stub
     sys.modules["lxml.etree"] = lxml_stub.etree
 
-    root_dir = Path(__file__).resolve().parents[1]
+    root_dir = Path(__file__).resolve().parents[2]
     if str(root_dir) not in sys.path:
         sys.path.insert(0, str(root_dir))
     process_xml_files = importlib.import_module(
