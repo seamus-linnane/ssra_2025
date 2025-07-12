@@ -1,0 +1,18 @@
+name: ssra
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=2.2.0
+  - pandas=2.3.1
+  - matplotlib=3.8.4
+  - seaborn=0.13.2
+  - scipy=1.15.2
+  - scikit-learn=1.7.0
+  - opencv
+  - jupyterlab
+  - pip
+  - pip:
+      - wfdb==4.3.0
+      - biosppy==2.2.3
+      - PyWavelets
