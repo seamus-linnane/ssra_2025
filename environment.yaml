@@ -1,0 +1,17 @@
+name: ssra
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=2.2.0
+  - python=3.10
+  - pandas=2.3.1
+  - scikit-learn=1.7.0
+  - pip
+  - jupyterlab
+  - scipy=1.15.2
+  - seaborn=0.13.2
+  - opencv
+  - matplotlib=3.8.4
+  - lxml
+  - notebook
